@@ -1,0 +1,44 @@
+<mat-toolbar color="primary">
+    <button mat-icon-button class="menu-icon" (click)="drawers.toggle()" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span class="text" style="margin-left: 20px;">News App</span>
+    <span class="example-spacer">
+        <span>{{title}}</span>
+    </span>
+    <button mat-icon-button class="example-icon" [matMenuTriggerFor]="menu2"
+        aria-label="Example icon-button with share icon" matTooltip="Location">
+        <mat-icon>place</mat-icon>
+    </button>
+    <mat-menu #menu2="matMenu">
+        <span class="text-warning d-flex justify-content-center">Select Country</span>
+        <button mat-menu-item routerLink="/australia" routerLinkActive="active">
+            <span>Australia</span>
+        </button>
+        <button mat-menu-item routerLink="/canada" routerLinkActive="active">
+            <span>Canada</span>
+        </button>
+        <button mat-menu-item routerLink="/france" routerLinkActive="active">
+            <span>France</span>
+        </button>
+        <button mat-menu-item routerLink="/germany" routerLinkActive="active">
+            <span>Germany</span>
+        </button>
+        <button mat-menu-item routerLink="/japan" routerLinkActive="active">
+            <span>Japan</span>
+        </button>
+        <button mat-menu-item routerLink="/united_kingdom" routerLinkActive="active">
+            <span>United Kingdom</span>
+        </button>
+        <button mat-menu-item routerLink="/united_states" routerLinkActive="active">
+            <span>United States</span>
+        </button>
+    </mat-menu>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" matTooltip="About" routerLink="/about" routerLinkActive="active">
+        <mat-icon>person</mat-icon>
+    </button>
+    <button mat-fab color="warn" class="home-btn" style="margin-left: 10px;" aria-label="Example icon-button with share icon" matTooltip="Home" routerLink="/home" routerLinkActive="active">
+        <mat-icon>home</mat-icon>
+    </button>
+    <div *ngIf = "showLoader">Loading...</div>
+</mat-toolbar>

@@ -1,0 +1,83 @@
+<div style="margin: auto;justify-content: center;text-align: center;">
+    <h1 class="badge bg-dark d-5">Top Headlines</h1>
+</div>
+<mat-tab-group>
+    <mat-tab label="BUSINESS">
+        <div class="container" style="margin: auto;justify-content: center;text-align: center;">
+            <div class="row" style="justify-content: center;">
+                <div [class.mat-elevation-z10]='isactive' class="cards col-lg-3 col-md-4"
+                    *ngFor="let display of newsDisplayB" matRipple>
+                    <a href="{{display.url}}" target="_blank">
+                        <img src="{{display.urlToImage}}" alt="Image not available from {{display.source.name}}">
+                        <h2 class="text-wrap">{{display.title}}</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </mat-tab>
+    <mat-tab label="ENTERTAINMENT">
+        <div class="container" style="margin: auto;justify-content: center;text-align: center;">
+            <div class="row" style="justify-content: center;">
+                <div [class.mat-elevation-z10]='isactive' class="cards col-lg-3 col-md-4"
+                    *ngFor="let display of newsDisplayE" matRipple>
+                    <a href="{{display.url}}" target="_blank">
+                        <img src="{{display.urlToImage}}" alt="Image not available from {{display.source.name}}">
+                        <h2 class="text-wrap">{{display.title}}</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </mat-tab>
+    <mat-tab label="HEALTH">
+        <div class="container" style="margin: auto;justify-content: center;text-align: center;">
+            <div class="row" style="justify-content: center;">
+                <div [class.mat-elevation-z10]='isactive' class="cards col-lg-3 col-md-4"
+                    *ngFor="let display of newsDisplayH" matRipple>
+                    <a href="{{display.url}}" target="_blank">
+                        <img src="{{display.urlToImage}}" alt="Image not available from {{display.source.name}}">
+                        <h2 class="text-wrap">{{display.title}}</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </mat-tab>
+    <mat-tab label="SCIENCE">
+        <div class="container" style="margin: auto;justify-content: center;text-align: center;">
+            <div class="row" style="justify-content: center;">
+                <div [class.mat-elevation-z10]='isactive' class="cards col-lg-3 col-md-4"
+                    *ngFor="let display of newsDisplaySC" matRipple>
+                    <a href="{{display.url}}" target="_blank">
+                        <img src="{{display.urlToImage}}" alt="Image not available from {{display.source.name}}">
+                        <h2 class="text-wrap">{{display.title}}</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </mat-tab>
+    <mat-tab label="SPORTS">
+        <div class="container" style="margin: auto;justify-content: center;text-align: center;">
+            <div class="row" style="justify-content: center;">
+                <div [class.mat-elevation-z10]='isactive' class="cards col-lg-3 col-md-4"
+                    *ngFor="let display of newsDisplaySP" matRipple>
+                    <a href="{{display.url}}" target="_blank">
+                        <img src="{{display.urlToImage}}" alt="Image not available from {{display.source.name}}">
+                        <h2 class="text-wrap">{{display.title}}</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </mat-tab>
+    <mat-tab label="TECHNOLOGY">
+        <div class="container" style="margin: auto;justify-content: center;text-align: center;">
+            <div class="row" style="justify-content: center;">
+                <div [class.mat-elevation-z10]='isactive' class="cards col-lg-3 col-md-4"
+                    *ngFor="let display of newsDisplayT" matRipple>
+                    <a href="{{display.url}}" target="_blank">
+                        <img src="{{display.urlToImage}}" alt="Image not available from {{display.source.name}}">
+                        <h2 class="text-wrap">{{display.title}}</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </mat-tab>
+</mat-tab-group>

@@ -1,0 +1,27 @@
+img{
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+    min-height: 150px;
+    line-height: 75px;
+    text-align: center;
+}
+
+.cards{
+    margin: 18px 0px;
+}
+
+h2{
+    min-height: 50px;
+    overflow: hidden;
+    margin: 15px 10px;
+}
+
+a:link{
+    text-decoration: none;
+    color: white;
+}
+
+a:visited{
+    color: white;
+}

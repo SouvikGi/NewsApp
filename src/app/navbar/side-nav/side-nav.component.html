@@ -1,0 +1,29 @@
+<button mat-icon-button color='warn' style="background-color: #fefefefe;" class="d-flex justify-content-center btn-lg text-center" (click)="sidenav.toggle()" routerLink="/home" routerLinkActive="active">
+    <img style="width: 25px;" src="https://img.icons8.com/ios-glyphs/60/000000/home.png" alt="home">
+    <span>Home</span>
+</button>
+<button mat-icon-button color="accent" [matMenuTriggerFor]="menu">Countries</button>
+<mat-menu class="text-center" #menu="matMenu" xPosition="after">
+    <button class="listButton" (click)="sidenav.toggle()" mat-menu-item routerLink="/australia" routerLinkActive="active">
+        <span>Australia</span>
+    </button>
+    <button class="listButton" (click)="sidenav.toggle()" mat-menu-item routerLink="/canada" routerLinkActive="active">
+        <span>Canada</span>
+    </button>
+    <button class="listButton" (click)="sidenav.toggle()" mat-menu-item routerLink="/france" routerLinkActive="active">
+        <span>France</span>
+    </button>
+    <button class="listButton" (click)="sidenav.toggle()" mat-menu-item routerLink="/germany" routerLinkActive="active">
+        <span>Germany</span>
+    </button>
+    <button class="listButton" (click)="sidenav.toggle()" mat-menu-item routerLink="/japan" routerLinkActive="active">
+        <span>Japan</span>
+    </button>
+    <button class="listButton" (click)="sidenav.toggle()" mat-menu-item routerLink="/united_kingdom" routerLinkActive="active">
+        <span>United Kingdom</span>
+    </button>
+    <button class="listButton" (click)="sidenav.toggle()" mat-menu-item routerLink="/united_states" routerLinkActive="active">
+        <span>United States</span>
+    </button>
+</mat-menu>
+<button mat-icon-button color="accent" (click)="sidenav.toggle()" routerLink="/about" routerLinkActive="active">About</button>
